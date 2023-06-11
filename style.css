@@ -44,3 +44,74 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=============== NFT ===============*/
+.nft {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+  padding: 1rem;
+  width: 320px;
+}
+
+.nft,
+.nft__img {
+  border-radius: 1em;
+}
+
+.nft__title {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  margin: 1.5rem 0;
+}
+
+.nft__description {
+  line-height: 1.5em; /* 1.5 * font size = line-height*/
+  margin-bottom: 1.5rem;
+}
+
+.nft__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.nft__price {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nft__price,
+.nft__time {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nft__line {
+  border: 1px solid var(--first-color-alt);
+  margin-bottom: 1.5rem;
+}
+
+.nft__creator {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nft__creator-img {
+  width: 40px;
+  border: solid 1px var(--title-color);
+  border-radius: 50%;
+}
+
+.nft__creator-name span {
+  color: var(--title-color);
+}
