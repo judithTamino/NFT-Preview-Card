@@ -1,0 +1,46 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== colors ==========*/
+  --first-color: hsl(178, 100%, 50%);
+  --first-color-alt: hsl(215, 32%, 27%);
+  --text-color: hsl(215, 51%, 70%);
+  --title-color: hsl(0, 0%, 100%);
+  --body-color: hsl(217, 54%, 11%);
+  --card-color: hsl(216, 50%, 16%);
+  /*========== font and typography ==========*/
+  --body-font: 'Outfit', sans-serif;
+  --title-size: 1.5rem;
+  --normal-font-size: 1.125rem; 
+  /*========== font weight ==========*/
+   --font-light: 300;
+   --font-regular: 400;
+   --font-semi-bold: 600;
+}
+
+/*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
