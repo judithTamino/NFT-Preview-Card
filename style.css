@@ -58,6 +58,9 @@ img {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
   padding: 1rem;
   width: 320px;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .nft,
@@ -65,9 +68,27 @@ img {
   border-radius: 1em;
 }
 
+.nft__img {
+  background-image: url('images/image-equilibrium.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nft__img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, .5);
+  background-image: url('images/icon-view.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
 .nft__title {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  font-size: var(--title-size);
   margin: 1.5rem 0;
 }
 
@@ -115,3 +136,20 @@ img {
 .nft__creator-name span {
   color: var(--title-color);
 }
+
+.nft__title,
+.nft__creator-name span {
+  cursor: pointer;
+}
+
+/*=============== ACTIVE STATE ===============*/
+.nft__title:hover,
+.nft__creator-name span:hover {
+  color: var(--first-color);
+}
+
+.nft__img-overlay:hover {
+  opacity: 1;
+  transition: opacity .4s;
+}
+
